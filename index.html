@@ -1,0 +1,1238 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+This page is the defualt page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OTG Webstore</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	
+	<!-- animation css files -->
+	<link rel="stylesheet" href="css/animation-aos.css">
+	<link href='./css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<!-- //animation css files -->
+
+	<!-- css files -->
+    <link href="./css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="./css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="./css/fontawesome-all.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-git.min.js"></script>
+
+
+	<style>
+
+		.custom-banner {
+			background: url(./images/marketing_background.jpeg);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			-ms-background-size: cover;
+			background-size: cover;
+			position: relative;
+			z-index: 1;
+		}
+
+
+		.custom-banner:after,
+		.inner_banner:after {
+			background-color: #000;
+			content: "";
+			left: 0;
+			opacity: 0.3;
+			top: 0;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+		}
+		html{
+			overflow-x: hidden;
+		}
+		.f1{
+			height: 300px;
+		}
+
+
+.sqdHome__ticker {
+  font-family: Industry;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.sqdHome__ticker__dollar,
+.sqdHome__ticker__digit {
+  font-size: 30px;
+  line-height: 34px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sqdHome__ticker__dollar {
+  background-color: rgba(0,146,255, 0.1);
+  color: #0092ff;
+  padding: 12px 10px;
+  margin-right: 3px;
+}
+
+.sqdHome__ticker__digit {
+  background-color: #262e34;
+  color: #FFF;
+  margin-left: 2px;
+}
+
+.sqdHome__ticker__digit__wheel,
+.sqdHome__ticker__digit__wheel--active {
+  display: flex;
+  flex-direction: column;
+  height: 58px;
+  transition: transform 3s ease-out;
+}
+.sqdHome__ticker__digit__wheel--millions {
+  transform: translateY(-100%);
+}
+.sqdHome__ticker__digit__wheel--hundred-thousands {
+  transform: translateY(-1000%);
+}
+.sqdHome__ticker__digit__wheel--ten-thousands {
+  transform: translateY(-2000%);
+}
+.sqdHome__ticker__digit__wheel--thousands {
+  transform: translateY(-3000%);
+}
+.sqdHome__ticker__digit__wheel--hundreds {
+  transform: translateY(-4000%);
+}
+.sqdHome__ticker__digit__wheel--tens {
+  transform: translateY(-5000%);
+}
+.sqdHome__ticker__digit__wheel--ones {
+  transform: translateY(-6000%);
+}
+
+.sqdHome__ticker__digit__wheel--active {
+  transform: translateY(0);
+}
+
+.sqdHome__ticker__digit__wheel__item {
+  padding: 12px 6px;
+  width: 29px;
+  text-align: center;
+}
+
+.sqdHome__ticker__comma {
+  margin-left: 3px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 767px) {
+  .sqdHome__ticker__dollar,
+  .sqdHome__ticker__digit {
+    font-size: 42px;
+    line-height: 34px;
+  }
+
+  .sqdHome__ticker__dollar {
+    padding: 23px 19px;
+    margin-right: 7px;
+  }
+
+  .sqdHome__ticker__digit {
+    margin-left: 10px;
+  }
+
+  .sqdHome__ticker__digit__wheel,
+  .sqdHome__ticker__digit__wheel--active {
+    height: 80px;
+  }
+
+  .sqdHome__ticker__digit__wheel__item {
+    padding: 23px 19px;
+    width: 67px;
+  }
+
+  .sqdHome__ticker__comma {
+    margin-left: 10px;
+    font-size: 40px;
+    line-height: 37px;
+  }
+}
+.slide_img{
+	width: 80%;
+    margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .sqdHome__ticker__digit__wheel__item {
+    padding: 23px 10px;
+    width: 47px;
+  }
+}
+
+.top-logo{
+	padding:15px;
+}
+
+@media screen and (min-width: 415px) {
+	.top-logo{
+	width: 20%;
+	}
+	
+}
+
+@media screen and (max-width: 415px) {
+	.top-logo{
+	width: 70%;
+	padding:0px;
+	}
+	h1.top-text.aos-init.aos-animate {
+    font-size: 26px;
+    margin-top: 25px;
+	}
+}
+.shadow{
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+
+.facebook_btn{
+	background: #0079ce;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	border: none;
+	margin-left:20px;
+}
+.facebook_btn:hover{
+	cursor: pointer;
+	background: #015fa1;
+}
+.google_btn{
+	background: #DD4B39 !important;
+    color: white;
+	border-radius: 5px;
+    padding: 5px 20px;
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	border: none;
+	margin-left:20px;
+}
+.google_btn:hover{
+	cursor: pointer;
+	background: rgb(228, 47, 23) !important;
+}
+h1.top-text {
+    color: white;
+    white-space: pre-line;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+	</style>
+	
+</head>
+<body>
+
+<!-- header -->
+<header class="index-banner">
+    <!-- nav -->
+    <nav class="main-header">
+      <div id="brand" data-aos="zoom-in-up">
+        <div class="top-logo">
+          <a href="index.html">
+				<img src="https://store.otgcustom.com/images/OTG_STORES_WHITE.png">
+          </a>
+        </div>
+      </div>
+      <div id="menu">
+        <div id="menu-toggle">
+          <div id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+          <li>
+            <a data-aos="fade-up" href="#" data-toggle="scroll" data-target="#exampleModalCenter1">Create Store</a>
+          </li>
+          <li>
+            <a href="#choose" class="scroll">Why Choose Us</a>
+		  </li>
+		  <li>
+				<a href="#how_it_works" class="scroll">How it works</a>
+		  </li>
+          <li>
+            <a href="#overview" class="scroll">Overview</a>
+          </li>
+          <li>
+            <a href="#faq" class="scroll">Support</a>
+		  </li>
+		  <!--
+          <li>
+            <a  class="scroll" data-toggle="modal" data-target="#BookDemoModal" style="color:#f2f2f2;" >Book a Demo</a>
+          </li>
+      		-->
+          <li>
+            <a href=""><button type="button" class="btn w3ls-btn shadow">
+              Login
+            </button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- //nav -->
+	<!-- banner -->
+	<div class="custom-banner layer" id="home">
+		<div class="container">
+			<div class="row banner-text">
+				<div class="slider-info col-lg-6">
+					<div class="agileinfo-logo">
+						<h1 data-aos="fade-down" class="top-text">The simplest way to manage kit and ordering for a single team or entire global organisation.
+						</h1>
+					</div>
+
+					<br>
+
+					<h5 class="txt-w3_agile" data-aos="fade-down" style="color:white; white-space: pre-line;font-size: 20px;line-height:1.6;">OTG allows you to design the products you dream of, have a 24/7 online store, and make money while you sleep – not to mention take the hassle of order management!</h5>
+					<a class="btn mt-4 mr-2 text-capitalize shadow" data-aos="fade-up" href="https://store.otgcustom.com/pages/signup.php">Start Building</a>
+					<a class="btn mt-4 text-capitalize shadow" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">watch video <i class="fas fa-play-circle"></i></a>
+				</div>
+
+
+				<div class="col-lg-6 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
+
+					<!---
+					<h5><i class="fas mr-2 fa-laptop"></i> Register Now</h5>
+					<form action="../php/signup.php" class="mt-4" method="post">
+						<input class="form-control" type="email" name="email" placeholder="Email" required="" />
+						<input class="form-control" type="password" name="password" placeholder="Password" required="" />
+						<input class="form-control text-capitalize" type="submit" value="Register Account">
+					</form>
+					-->
+					<img src="images/banner.png">
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- //banner -->
+</header>
+<!-- //header -->
+
+  
+  <!-- Book a demo Modal -->
+  <div class="modal fade" id="BookDemoModal" tabindex="-1" role="dialog" aria-labelledby="BookDemoModal" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+					<h5><i class="fas mr-2 fa-laptop"></i> Book a Demo Now</h5>
+					<form action="../php/marketing/newsletter.php" class="mt-4" method="post">
+						
+						<div class="form-group">
+								<label class="align-left" for="exampleInputEmail1">Email address</label>
+								<input name="email" type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter your email..." required>
+								<small id="emailHelp" class="form-text text-muted align-left">We'll never share your email with anyone else.</small>
+						</div>
+						
+						<input class="btn btn-primary form-control text-capitalize shadow" type="submit" value="Sign Up" style="border-radius:10px;">
+					</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+   <!-- Book a demo Modal -->
+
+<!-- banner bottom -->
+<section class="banner-bottom py-5" style="background-color:#f2f2f2;">
+	<div class="container py-md-3">
+		<h4 class="text-center" data-aos="zoom-in">Trusted by local & global groups</h4>
+		<section class="customer-logos" style="background-color:#f2f2f2;">
+			<div class="slide"><img class="slide_img" src="https://www.onthegosports.com.au/sites/default/files/custom-layout-images/logos1.png"></div>
+			<div class="slide"><img class="slide_img" src="https://www.onthegosports.com.au/sites/default/files/custom-layout-images/logos3.png"></div>
+			<div class="slide"><img class="slide_img" src="https://www.onthegosports.com.au/sites/default/files/custom-layout-images/logos2.png"></div>
+			<div class="slide"><img class="slide_img" src="https://www.onthegosports.com.au/sites/default/files/custom-layout-images/logos4.png"></div>
+			<div class="slide"><img class="slide_img" src="https://www.onthegosports.com.au/sites/default/files/custom-layout-images/logos5_0.png"></div>
+			<div class="slide"><img class="slide_img" src="https://www.onthegosports.com.au/sites/default/files/custom-layout-images/logos7.png"></div>
+		 </section>
+	</div>
+</section>
+<!-- //banner bottom -->
+
+<!-- why choose us -->
+<section class="choose py-5" id="choose">
+	<div class="container py-md-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Why Choose OTG</h3>
+		<div class="feature-grids row">
+			<div class="col-lg-4 col-md-6" data-aos="fade-right">
+				<div class="f1 icon1 p-4">
+					<img src="https://www.squadlocker.com/hubfs/Home%20V2/contract-icon.svg">
+					<h3 class="my-3">No Contracts, Ever</h3>
+					<p>Our service is free to use and we’ll never surprise you with hidden fees</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6" data-aos="fade-up">
+				<div class="f1 icon2 p-4">
+					<img src="https://www.squadlocker.com/hubfs/Home%20V2/min-icon.svg">
+					<h3 class="my-3">No Minimum Orders</h3>
+					<p>We decorate and ship each order individually so you're not stuck buying more than you need or have excess inventory.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
+				<div class="f1 icon3 p-4">
+					<img src="https://www.squadlocker.com/hubfs/Home%20V2/year-icon.svg">
+					<h3 class="my-3">Shop Year Round</h3>
+					<p>Stores never close so you can shop and fundraise 24/7 - 365 days a year.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-right">
+					<div class="f1 icon1 p-4">
+						<img src="https://www.squadlocker.com/hubfs/Home%20V2/quick-icon.svg">
+						<h3 class="my-3">Quick Turnaround</h3>
+						<p>All gear shipped in 2 weeks or less directly to your home - some in as little as 5 business days.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6" data-aos="fade-up">
+					<div class="f1 icon2 p-4">
+						<img src="https://www.squadlocker.com/hubfs/Home%20V2/mvp-icon.svg">
+						<h3 class="my-3">No-Hassle Returns</h3>
+						<p>Items in our MVP program qualify for no-hassle returns and ship faster.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
+					<div class="f1 icon3 p-4">
+						<img src="https://www.squadlocker.com/hubfs/Home%20V2/logo-icon.svg">
+						<h3 class="my-3">Customise Your Store</h3>
+						<p>Add your organisations logos, colours and more.. Make the store like it’s your dream website.</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</section>
+<!-- //why choose us -->
+
+
+<!-- quote -->
+<section class="quote bg-light" style="padding-bottom: 50px;" id="how_it_works">
+		<div style="width: 100%;">
+				<h3 class="heading text-center py-md-5" data-aos="zoom-in"> How it works</h3>
+		</div>
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-6 " data-aos="fade-right">
+							<div>
+									<h5 class="mb-4" style="width: 100%;">A Customized E-Commerce Experience</h5>
+									Let parents, players, and fans shop from online stores for all their custom uniform, team gear, and spirit-wear needs.<br><br>
+
+									Organize multiple team stores under one dedicated URL so your community can shop from any store, any time.<br><br>
+
+									Connect your apparel solution directly to your website, team page, or athletic department site. Stores are always open so your community can shop year-round.<br><br>
+							</div>
+					</div>
+			
+			
+						<div class="col-lg-6" data-aos="fade-left">
+							<img style="border: none;width:100%;" src="images/how-it-works.png" alt="" class="img-fluid"></iframe>
+						</div>
+			</div>
+		</div>
+		
+</section>
+<!-- //quote -->
+
+<!-- process -->
+<section class="process py-5" id="overview">
+	<div class="container py-md-5">
+		<div class="row process-grids">
+
+
+			<div class="col-lg-6 py-md-5" data-aos="fade-right">
+				<h4 class="mb-4">The value of OTG Webstores</h4>
+				<div style="font-size: 1.0em;">
+						<span style="font-weight:800; font-size: 1.2em;">Convenience:</span> Reduce the time it takes to select, order and deliver custom apparel from one central dashboard<br><br>
+
+						<span style="font-weight:800; font-size: 1.2em;">Speed:</span> Outfit your team or organization in as fast as 5 business days<br><br>
+						
+						<span style="font-weight:800; font-size: 1.2em;">Quality:</span> Ensure your apparel is decorated with the highest quality designs, colors and logos – every time<br><br>
+				</div>
+			</div>
+
+
+			<div class="col-lg-6 py-md-5" data-aos="fade-left">
+				<iframe style="width: 120%;height: 120%;border: none;"  class="img-fluid" src="https://www.youtube.com/embed/m0aHA9TziPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			
+
+			<div class="col-lg-6 py-md-5" data-aos="fade-right" style="margin-top: 40px;">
+				<img src="https://www.squadlocker.com/hubfs/Home%20V2/jersey.jpg" alt="" class="img-fluid"/>
+			</div>
+			<div class="col-lg-6 py-md-5" data-aos="fade-left" style="margin-top: 40px;">
+				<h4 class="mb-4">Fantastic Service & Quick Delivery</h4>
+				<div>
+					You can create and customize an apparel solution for your unique school, league, or organization. Orders ship in one-five weeks (Depending on product selection) or less directly to your athletes, staff or bulk to you. We'll even send email reminders for when your goods are being shipped! 
+				</div>
+			</div>
+
+			<div class="col-lg-6 py-md-5" data-aos="fade-right">
+				<h4 class="mb-4">Reduce Time, Maximise Returns!</h4>
+				<div style="font-size: 1.0em;">
+					Your Account Manager will work with you on the best designs and items that fits your budget, what fabrics and features are important to your organisation and how to maximise your commission or fundraising dollars through your solution!<br><br>
+
+					We'll show you how to handle the setup and also provide you with training to make updates on the fly from the comfort of your office or on the sidelines – where ever you are!
+				</div>
+			</div>
+			<div class="col-lg-6 py-md-5" data-aos="fade-left">
+					<img src="images/Woden.png" alt="" class="img-fluid"/>
+			</div>
+
+
+			<div class="col-lg-6 py-md-5" data-aos="fade-right" >
+					<img src="images/vikins.png" alt="" class="img-fluid"/>
+				</div>
+				<div class="col-lg-6 py-md-5" data-aos="fade-left">
+					<h4 class="mb-4">Maintain Brand Consistency & Collaborate</h4>
+					<div>
+							Take back control of your organization's brand without losing what makes each team unique. Approve logos and colors to ensure brand consistency across all teams. You can even invite coaches and captains to collaborate during the setup process to select merchandise each team is proud to wear.
+					</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+<!-- //process -->
+
+<!--/pricing -->
+<!--
+<section class="pricing bg-light py-5" id="pricing">
+	<div class="container py-lg-3">
+		<div class="inner-sec">
+			<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Pricing plans</h3>
+			<div class="price-right">
+				<div class="tabs">
+					<ul class="nav nav-pills my-md-5 my-3 justify-content-center" id="pills-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">4 options</a>
+						</li>
+						 <li class="nav-item">
+							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Monthly</a>
+						</li>
+
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="menu-grids">
+								<div class="row t-in">
+									<div class="col-lg-3 col-sm-6 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Small&nbsp;&nbsp;&nbsp;&nbsp;  Store</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class=""></span>Free
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-md-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Medium Store</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>10<span>/mth</span>
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Enterprise Store</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>20<span>/mth</span>
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Non-Profit Store</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>5<span>/mth</span>
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<div class="menu-grids mt-4">
+								<div class="row t-in">
+									<div class="col-lg-3 col-sm-6 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Standard</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>60
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-md-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Business</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>80
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Business</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>90
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Advance</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>90
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+-->
+<!-- //pricing -->
+
+<!-- faqs -->
+<section class="faq-w3l py-5" id="faq">
+	<div class="container py-lg-3">
+	<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Need help getting setup</h3>
+		<div class="row faq-info">
+			<div class=" col-md-6 faq-w3agile">
+				<ul class="faq pl-sm-4 pl-3">
+					<li class="item1 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>How long does it take to setup my store?  </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> 5-10 Minutes. We focus on making the product design and web experience really easy. We recommend you allow yourself 5-10 minutes to create your first products, edit them and publish your store! But hey - 30 minutes will only help you add more products, and make more profit!</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item2 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>How do I get paid my commission?  </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> 7-14 Days after the store closes.  When you close your store, our system will automatically produce reports. Our assurance team will then review & validate the transactions to ensure they are in line with our standards and from there will issue you a payment to your bank account or PayPal, that you will enter in the store setup section. You will be emailed a remittance of your commissions as well, and you will also be able to access previous payouts in your account.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item3 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>Can I design and sell any product?  </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> All OTG products are available to design and sell on your store. We are adding new products and new designs often, and also adding new features, but we always want feedback – so don’t be shy in sharing ideas to our team.</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class=" col-md-6 faq-w3agile">
+				<ul class="faq pl-sm-4 pl-3">
+					<li class="item5 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>How do I turn my store on and off? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> When you register and go to the build your store page, you will notice a calendar – here is where you place the date you want receive your products and we’ll let you know the latest date that your store can close. Any date prior to then your store can close.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item6 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>How do I market my store to my contacts? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Once you’ve built your store, you will have your own domain name! (Cool right?) from there you can share this out via email & social channels, using the store dashboard or sharing directly yourself. Your contacts will only see the store you’ve built.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item7 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>Do you ship worldwide?</h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Yes – we ship anywhere in the world. We do not ship to PO Boxes.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item7 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>For my customers, how long will it take for them to receive their order?</h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> On the product details you will see when the order ships (In the customer view). It is calculated from the time when your store will close. Please note, we consolidate your order once your store closes, then we make your stores products, and we ship them to your customer. The delivery time are different per product but are from; 5-7 Days for the “Need it Now” range. 4-5 weeks for the “Bespoke” range.</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //faqs -->
+
+<!-- testimonials -->
+<section class="testimonials bg-light py-5" id="testimonials">
+	<div class="container py-lg-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> What our customers are saying</h3>
+		<div class="row test-grids">
+			<div class="col-md-4 col-sm-7 col-9" data-aos="zoom-in">
+				<img src="images/Run-Club.png" alt="" class="img-fluid" />
+			</div>
+			<div class="col-md-8">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li data-aos="fade-down">
+							<div class="testi-pos">
+								<h4>Annabelle</h4>
+								<!--<span class="">- congue leo</span>-->
+								<ul class="d-flex mt-2">
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testi-agile">
+								<p>
+									<i class="fas fa-quote-left pr-3"></i>Dealing with the team at OTG was terrific throughout the whole process. Specifically Brett at the Melbourne office was fantastic, as he walked me through the whole process of developing and ordering our product and was very prompt with correspondence. The final product has exceeded our expectations, and I'm sure we will be ordering more with OTG in the future.
+								</p>
+							</div>
+						</li>
+						<li data-aos="fade-down">
+							<div class="testi-pos">
+								<h4>Marketa</h4>
+							   
+								<ul class="d-flex mt-2">
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testi-agile">
+								<p>
+									<i class="fas fa-quote-left pr-3"></i>Thank you to the OTG team for processing our order so quickly. Our T-shirts arrived yesterday and they look great.
+									A special thanks to Nhanie for keeping us updated and making sure our order will be delivered on time. Excellent Customer Support!
+								</p>
+							</div>
+						</li>
+						<li data-aos="fade-down">
+							<div class="testi-pos">
+								<h4>Katie
+								</h4>
+								
+								<ul class="d-flex mt-2">
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testi-agile">
+								<p>
+									<i class="fas fa-quote-left pr-3"></i>Our shirts were required on a tight deadline. After a few complications with the initial order process, OTG came through and delivered with time to spare for our event. A big thank you to Nhanie who went above and beyond and always kept me in the loop throughout this process. Very much appreciated and the shirts look great!!
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //testimonials -->
+
+<!-- contact -->
+<!--
+<section class="contact py-5" id="contact">
+	<div class="container py-lg-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Get in touch</h3>
+		<div data-aos="fade-up">
+			<div class="row">
+				<div class="col-md-6 styled-input mt-0">
+					<input type="text" name="Name" placeholder="First Name" required="">
+				</div>
+				<div class="col-md-6 styled-input mt-md-0">
+					<input type="text" name="Name" placeholder="Last Name" required="">
+				</div> 
+			</div>
+			<div class="row">
+				<div class="col-md-6 styled-input">
+					<input type="email" name="Email" placeholder="Email" required=""> 
+				</div>
+				<div class="col-md-6 styled-input">
+					<input type="text" name="phone" placeholder="Phone Number" required="">
+				</div> 
+			</div>
+			<div class="styled-input">
+				<textarea name="Message" placeholder="Message" required=""></textarea>
+			</div>
+			<div class="click text-center mt-3">
+				<input type="submit" value="Send">
+			</div>
+		</div>
+
+		<script>
+		
+		</script>
+
+
+	</div>
+</section>
+-->
+<!-- //contact -->
+
+<!--footer -->
+<footer>
+<section class="footer footer_w3layouts_section_1its py-5">
+	<div class="container py-md-4">
+	<div class="footer-grid_section text-center" data-aos="zoom-in">
+				<ul class="social_section_1info">
+					<li class="mb-2 facebook"><a href="https://www.facebook.com/OTGCustomApparel/"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
+					<li class="mb-2 twitter"><a href="https://twitter.com/OnTheGoLife"><i class="fab mr-1 fa-twitter"></i>twitter</a></li>
+					<li class="google"><a href="https://www.instagram.com/onthego_sports/"><i class="fab fa-instagram"></i>instagram</a></li>
+					<li class="linkedin"><a href="https://www.linkedin.com/company/onthego-sports/"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
+				</ul>
+			</div>
+			
+		<div class="row footer-top mt-md-5 mt-4">
+			<div class="col-lg-4 col-md-6 footer-grid_section_1its_w3" data-aos="fade-right">
+				<div class="footer-title">
+					<h3>Address</h3>
+				</div>
+				<div class="footer-text">
+					<p>Address : ONTHEGO HQ
+							UNIT 4B, 69-71 DARLING ST, MITCHELL, ACT 2911 AUSTRALIA</p>
+					<p>Phone : +61 2 6251 3090</p>
+					<p>Email : <a href="mailto:info@onthegosports.com.au">info@onthegosports.com.au</a></p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-md-0 mt-4 footer-grid_section_1its_w3" data-aos="fade-up">
+				<div class="footer-title">
+					<h3>Quick Links</h3>
+				</div>
+				<div class="row">
+					<ul class="col-6 links">
+						<li><a href="#choose" class="scroll">Why Choose Us </a></li>
+						<li><a href="#overview" class="scroll">Overview </a></li>
+						<li><a href="#pricing" class="scroll">Pricing Plans</a></li>
+						<li><a href="#faq" class="scroll">Faq's </a></li>
+						<li><a href="#testimonials" class="scroll">Testimonial </a></li>
+						<li><a href="mailto:info@onthegosports.com.au">Contact </a></li>
+					</ul>
+					<ul class="col-6 links">
+						<li><a href="#">Privacy Policy </a></li>
+						<li><a href="#">General Terms </a></li>
+						<li><a href="#faq" class="scroll">Faq's </a></li>
+						<li><a href="#">Knowledge </a></li>
+						<li><a href="#">Forum </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its_w3" data-aos="fade-left">
+				<div class="footer-title">
+					<h3>Newsletter</h3>
+				</div>
+				<div class="footer-text">
+					<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+					<form action="../php/marketing/newsletter.php" method="post">
+						<input type="email" name="email" placeholder="Enter your email..." required="">
+						<button class="btn1"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+						<div class="clearfix"> </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="cpy-right text-center py-3">
+	<p class="">Copyright 2019 ONTHEGO® GROUP PTY LTD
+	</p>
+</div>
+<!-- //copyright -->
+
+<!-- Vertically centered Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+					<h5><i class="fas mr-2 fa-laptop"></i> Register Now</h5>
+					<form action="../php/signup.php" class="mt-4" method="post">
+						<div class="form-group">
+								<label class="align-left" for="exampleInputEmail1">Email address</label>
+								<input name="email" type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+								<small id="emailHelp" class="form-text text-muted align-left">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+								<label class="align-left" for="password">Password</label>
+								<input class="form-control" type="password" name="password" id="signup_password_id" placeholder="Password" required="" />
+								<small id="emailHelp" class="form-text text-muted align-left">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</small>
+						</div>
+						<input class="btn btn-primary form-control text-capitalize shadow" type="submit" value="Register Account" style="border-radius:10px;">
+						<script>
+							$('#signup_password_id').password({
+								shortPass: 'The password is too short',
+								badPass: 'Weak; try combining letters & numbers',
+								goodPass: 'Medium; try using special characters',
+								strongPass: 'Strong password',
+								containsField: 'The password contains your username',
+								enterPass: 'Type your password',
+								showPercent: false,
+								showText: true, // shows the text tips
+								animate: true, // whether or not to animate the progress bar on input blur/focus
+								animateSpeed: 'fast', // the above animation speed
+								field: false, // select the match field (selector or jQuery instance) for better password checks
+								fieldPartialMatch: true, // whether to check for partials in field
+								minimumLength: 4 // minimum password length (below this threshold, the score is 0)
+							});
+						</script>
+					</form>
+					<br>
+
+					<div class="row mb-3 ml-3">
+							<button onclick="fb_login()" class="facebook_btn"><i class="fab fa-facebook"></i>  Login with facebook</button>
+							<button id="google_btn_id" class="google_btn"><i class="fab fa-google"></i>  Login with google</button>
+					</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //Vertically centered Modal -->
+	
+<!-- video Modal Popup -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Video Overview</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body video">
+				<iframe src="https://player.vimeo.com/video/299137021"></iframe>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //video Model Popup -->
+
+<!--/Login-->
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="login px-4 mx-auto mw-100">
+					<h5 class="text-center mb-4">Login Now</h5>
+					<form action="../php/login_check.php" method="post">
+						<div class="form-group">
+							<label class="mb-2">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="" required="">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label class="mb-2">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" name="password"  placeholder="" required="">
+						</div>
+						<button type="submit" class="btn btn-primary submit mt-2 shadow" style="border-radius: 10px; width: 100%;">Sign In</button>
+						
+					</form>
+
+					<div class="row ml-1 mt-3">
+							<button onclick="fb_login()" class="facebook_btn"><i class="fab fa-facebook"></i>  Login with facebook</button>
+							<button onclick="g_login()" class="google_btn"><i class="fab fa-google"></i>  Login with google</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//Login-->
+
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- //js -->
+	
+	<!-- animation js -->
+	<script src='js/aos.js'></script>
+	<script>
+		AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+
+    </script>
+	<!-- //animation js -->
+
+	<!-- testimonials  Responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use"$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //testimonials  Responsiveslides -->
+
+	<!-- sticky nav bar-->
+	<script>
+
+		function g_login(){
+			document.getElementById("google_btn_id").click();
+		}
+		$(() => {
+
+		  //On Scroll Functionality
+		  $(window).scroll(() => {
+			var windowTop = $(window).scrollTop();
+			windowTop > 100 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
+			windowTop > 100 ? $('ul.nav-agile').css('top', '50px') : $('ul.nav-agile').css('top', '160px');
+			windowTop > 100 ? $('.nav-agile li a').css('color', 'black') : $('.nav-agile li a').css('color', '#eee');
+		  });
+
+		  //Click Logo To Scroll To Top
+		  $('#logo').on('click', () => {
+			$('html,body').animate({
+			  scrollTop: 0
+			}, 500);
+		  });
+
+
+		  //Toggle Menu
+		  $('#menu-toggle').on('click', () => {
+			$('#menu-toggle').toggleClass('closeMenu');
+			$('ul').toggleClass('showMenu');
+
+			$('li').on('click', () => {
+			  $('ul').removeClass('showMenu');
+			  $('#menu-toggle').removeClass('closeMenu');
+			});
+		  });
+
+		});
+	</script>
+	<!-- //sticky nav bar -->
+
+	<script src="js/smoothscroll.js"></script><!-- Smooth scrolling -->
+
+    <!-- start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+
+</body>
+
+</html>
